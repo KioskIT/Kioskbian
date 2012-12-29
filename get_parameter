@@ -1,0 +1,5 @@
+#!/bin/sh
+
+python json_parser.py $1
+
+
