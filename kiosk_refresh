@@ -4,14 +4,13 @@
 wmctrl -c chrome
 
 # Retrieve current kiosk parameters
-width=$(get_parameter width)
-height=$(get_parameter height)
-version=$(get_parameter version)
-server_ip=$(get_parameter server_ip)
+video_group=$(./get_parameter video_group)
+video_mode=$(./get_parameter video_mode)
+version=$(./get_parameter version)
+server_ip=$(./get_parameter server_ip)
 
 # Set screen resolution
-xrandr -s ${width}x${height}
+tvservice -e "${video_group} ${video_mode}"
 
 # Open Google Chrome in kiosk mode
-google-chrome --kiosk http://${server_ip}/kPanel/versions/${version}.html
-
+chrome --kiosk http://${server_ip}/kPanel/versions/${version}.html &
