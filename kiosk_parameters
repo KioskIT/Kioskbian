@@ -1,13 +1,8 @@
 {
-    "name": "Kiosk",
-    "description": "The first kiosk created for testing purposes",
-    "category": "default",
-
     "video_group": "CEA",
     "video_mode": "2",
 
-    "sync_stream": "192.168.1.105",
-    "version": "Example%20version%201",
+    "version": "Distributors%20webpage/index.php",
     "server_ip": "192.168.1.105:8080"
 }
 

@@ -1,5 +1,3 @@
 #!/bin/sh
 
-sed -i s/\"$1\":\ \".*\"/\"$1\":\ \"$2\"/ "kiosk_parameters"
-
-
+sed -i s/\"$1\":\ \".*\"/\"$1\":\ \"$(echo $2 | sed 's/ \+/%20/g' | sed 's/\//\\\//g')\"/ "kiosk_parameters"

@@ -13,4 +13,4 @@ server_ip=$(./get_parameter server_ip)
 tvservice -e "${video_group} ${video_mode}"
 
 # Open Google Chrome in kiosk mode
-chrome --kiosk http://${server_ip}/kPanel/versions/${version}.html &
+chrome --kiosk http://${server_ip}/kPanel/versions/${version} &

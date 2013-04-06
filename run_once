@@ -1,0 +1,2 @@
+# This makes the kiosk_refresh script run at startup
+update-rc.d kiosk_refresh defaults
